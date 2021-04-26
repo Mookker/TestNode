@@ -1,0 +1,10 @@
+type Order {
+    id: String,
+    name: String,
+    inventoryItems: [InventoryItem]
+}
+
+type Query {
+    order(id: String = "2"):Order,
+    orders: [Order]
+}

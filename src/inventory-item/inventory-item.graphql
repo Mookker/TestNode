@@ -1,0 +1,10 @@
+type InventoryItem {
+    id: String!,
+    name: String!,
+    price: Float!
+    orderId: String!
+}
+
+type Mutation {
+    updatePrice(itemId: String!, newPrice: Float!): InventoryItem
+}
